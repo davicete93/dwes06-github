@@ -1,6 +1,6 @@
 package Figuras;
 
-public class Triangulo {
+public class Triangulo extends Figura{
 
 	double base;
 	double altura;
@@ -11,7 +11,8 @@ public class Triangulo {
 	 * @param altura La altura del triangulo
 	 */
 	
-	public Triangulo(double base,double altura){
+	public Triangulo(String titulo,Color color,double base,double altura){
+		super(titulo,color);
 		this.base=base;
 		this.altura=altura;
 	}
@@ -41,13 +42,20 @@ public class Triangulo {
 	 * @return el perímetro del triángulo
 	 */
 	public double calcularPerimetro(){
-		return base*3;
+		return base+altura+calcularHipotenusa();
+	}
+	/**
+	 * Método para calcular la hipotenusa del triangulo
+	 * @return La hipotenusa del triangulo
+	 */
+	public double calcularHipotenusa(){
+		return Math.sqrt(Math.pow(base, 2)+Math.pow(altura, 2));
 	}
 	
 
 	@Override
 	public String toString() {
-		return "Triangulo [base=" + base + ", altura=" + altura + "]";
+		return super.toString()+" Triangulo [base=" + base + ", altura=" + altura + "]";
 	}
 
 	
