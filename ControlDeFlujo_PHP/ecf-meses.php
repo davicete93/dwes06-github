@@ -53,7 +53,7 @@
 				case "diciembre":
 					echo "El mes tiene 31 días";break;
 			}
-			}else if(strcmp($mes, "si")==0){
+			}else if(strcmp($bisiesto, "si")==0){
 				switch($mes){
 					case 2:
 					case "febrero":
