@@ -22,16 +22,16 @@ public class Problema {
 	System.out.println("Datos de la circunferencia 2: "+cir2.toString());
 	System.out.println("Datos del cuadrado: "+cua1.toString());
 	System.out.println("Datos del triangulo: "+tri1.toString());
-	System.out.println("El área de la figura es "+areaTotal);
-	System.out.println("El perímetro de la figura es "+perimetroTotal);
+	System.out.println("El ï¿½rea de la figura es "+areaTotal);
+	System.out.println("El perï¿½metro de la figura es "+perimetroTotal);
 	
 	
 	GestorFiguras arrayListFiguras=new GestorFiguras();
-	System.out.println("Añadimos las figuras");
-	arrayListFiguras.añadirFigura(cir1);
-	arrayListFiguras.añadirFigura(cir2);
-	arrayListFiguras.añadirFigura(cua1);
-	arrayListFiguras.añadirFigura(tri1);
+	System.out.println("Aï¿½adimos las figuras");
+	arrayListFiguras.aÃ±adirFigura(cir1);
+	arrayListFiguras.aÃ±adirFigura(cir2);
+	arrayListFiguras.aÃ±adirFigura(cua1);
+	arrayListFiguras.aÃ±adirFigura(tri1);
 	System.out.println("Mostramos las figuras");
 	arrayListFiguras.mostrarFiguras();
 	System.out.println("Borramos una figura");

@@ -10,15 +10,15 @@ public class GestorFiguras {
 		this.figuras=new ArrayList<Figura>();
 	}
 	
-	public boolean añadirFigura(Figura figura){
+	public boolean aÃ±adirFigura(Figura figura){
 		
 		for(Figura f : figuras){
 			if(f.titulo.equalsIgnoreCase(figura.titulo)){
-				System.out.println("No se puede añadir la figura porque ya existe");
+				System.out.println("No se puede aï¿½adir la figura porque ya existe");
 				return false;
 			}
 		}
-		System.out.println("Añadimos la figura al arraylist");
+		System.out.println("Aï¿½adimos la figura al arraylist");
 		figuras.add(figura);
 		return true;
 		
